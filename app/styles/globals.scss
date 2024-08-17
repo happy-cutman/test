@@ -1,0 +1,66 @@
+//@import 'variables/fonts';
+//@import 'variables/colors';
+//@import 'mixins/mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--ff-roboto), serif;
+  color: var(--clr-text-body);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-white);
+  font-family: var(--ff-kanit), serif;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--clr-text-body);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  max-width: 1632px;
+  padding: 40px 16px 80px 16px;
+  margin: 0 auto;
+}
